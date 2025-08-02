@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.2...3.5)
+cmake_minimum_required(VERSION 3.2...4.0)
 project(DiscordRPC LANGUAGES C CXX)
 set(DRPC_VERSION 3.4.0)
 
