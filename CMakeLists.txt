@@ -6,6 +6,11 @@ include(GNUInstallDirs)
 include(CheckCCompilerFlag)
 include(CheckCXXCompilerFlag)
 
+# In order to support the Xcode "new build system"
+if(POLICY CMP0114)
+    cmake_policy(SET CMP0114 NEW)
+endif()
+
 set(CMAKE_CXX_STANDARD 14)
 
 option(ENABLE_IO_THREAD "Start up a separate I/O thread, otherwise I'd need to call an update function" ON)
